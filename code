@@ -1,0 +1,17 @@
+# volume of ballpit
+def vball(pitheight, pitradius):
+    pi=3.14
+    return pi * (pitradius * pitradius) * pitheight
+def vball(ballrad):
+    pi = 3.14
+    return (4 / 3) * pi * (ballrad * ballrad * ballrad)
+
+pitradius = 2
+pitheight = 0.05
+ballrad = 1
+ballpack = 0.75 # volume taken by the balls in the bag
+pdensity = 0.75
+ball = vball(ballrad * ballrad) * pdensity 
+print("you need",ball,"to fill the pit")
+
+
